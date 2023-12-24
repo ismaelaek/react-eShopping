@@ -1,0 +1,7 @@
+.cart{
+    padding: 20px 40px ;
+}
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+}

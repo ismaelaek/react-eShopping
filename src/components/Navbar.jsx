@@ -10,16 +10,16 @@ const NavBar = () => {
             <h1>Online Shop</h1>
             <ul>
                 <li>
-                    <NavLink className='cart-icon'>
+                    <NavLink to='/cart' exact className='cart-icon'>
                         <FaCartArrowDown />
                         {cart.length !== 0 && <p className='prods-on-cart' >{ cart.length }</p>}
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/' exact activeClassName="active" className='navlink'>Sign In</NavLink>
+                    <NavLink to='/login' exact  className='navlink'>Sign In</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/' exact activeClassName="active" className='navlink'>Sign Up</NavLink>
+                    <NavLink to='/' exact  className='navlink'>Sign Up</NavLink>
                 </li>
             </ul>
         </nav>
