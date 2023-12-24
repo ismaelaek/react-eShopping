@@ -1,0 +1,128 @@
+.special-offer{
+    background-color: #eff3f6;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 20px ;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+.headings{
+    padding: 20px 40px;
+}
+.headings h1{
+    font-size: 40px;
+    margin: 0;
+    color:white;
+    text-transform: uppercase ;
+    font-style: italic;
+
+}
+.headings h1:first-child{
+    background-color: #4e2492;
+    width: fit-content;
+    padding: 5px 10px;
+}
+.headings h1:nth-child(2){
+    font-size: 33px;
+    background-color: #efa004;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.signup-btn {
+    margin-top: 40px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #4e2492 ;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #4e2492;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.signup-btn:hover {
+
+    background: #4e2492;
+    box-shadow: 0 0 10px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: white;
+}
+
+.signup-btn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.signup-btn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+.SP-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    height: 100%;
+}
+.card {
+    width: 400px;
+    height: 300px;
+    background: #efa004;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 80%;
+    filter: drop-shadow(0 0 0.75rem black);
+}

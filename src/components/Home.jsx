@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { getProducts } from '../features/productsSlice';
 import {Spin } from 'antd';
 import Product from './Product';
+import CarouselSection from './Carousel'
 
 const Home = () => {
     const dispatch = useDispatch()
@@ -17,6 +18,7 @@ const Home = () => {
     return (
         <>
             <NavBar />
+            <CarouselSection />
             <div>
                 {isLoading ? <IsloadingComp /> 
                     : (
